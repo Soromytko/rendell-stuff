@@ -9,6 +9,7 @@ add_subdirectory(glm)
 add_subdirectory(logx)
 
 add_subdirectory(rendell)
+target_link_libraries(rendell PRIVATE logx)
 
 add_subdirectory(rendell-text)
 # Specify PUBLIC to link the rendell-ui to this stuff.
